@@ -2,8 +2,8 @@
 set -e
 
 PROJECT_NAME=dijets-up
-OWNER=ava-labs
-REPO="dijetsnode-go-runner"
+OWNER=Dijets-Inc
+REPO="dijets-up"
 BINARY=dijets-up
 FORMAT=tar.gz
 PREFIX="$OWNER/$REPO"
