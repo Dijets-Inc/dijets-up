@@ -1,13 +1,12 @@
+<div align="center">
+  <img src="resources/dijets-up.png?raw=true">
+</div>
+
 # Dijets-up
 
-## Note
-
-This tool is under heavy development and the documentation/code snippets below may vary slightly from the actual code in the repository. Updates to the documentation may happen some time after an update to the codebase. Nonetheless, this README should provide valuable information about using this tool.
-
-## Overview
-
-This is a tool to run and interact with a local Dijets network.
-This tool may be especially useful for development and testing.
+Dijets-up is a CLI tool tthat lets you run and interact with a local Dijets network.
+With various network, node and genesis configurations already baked into it, dijets-up is
+an ideal tool for anyone looking to run local dijets networks for testing and development purposes.
 
 ## Installation
 
@@ -53,6 +52,13 @@ To add the binary to your path, run
 
 ```sh
 export PATH=$PWD/bin:$PATH
+```
+### Help Command
+
+You can use the help command at any time to learn more about a specific command's usage and its syntax.
+
+```sh
+dijets-up --help
 ```
 
 ### Run Unit Tests
@@ -127,15 +133,6 @@ dijets-up control start \
 --dijetsnodego-path ${DIJETSNODE_EXEC_PATH}
 ```
 
-Additional optional parameters which can be passed to the start command:
-
-```bash
---plugin-dir ${AVALANCHEGO_PLUGIN_PATH} \
---blockchain-specs '[{"vm_name": "subnetevm", "genesis": "/tmp/subnet-evm.genesis.json"}]'
---global-node-config '{"index-enabled":false, "api-admin-enabled":true,"network-peer-list-gossip-frequency":"300ms"}'
---custom-node-configs" '{"node1":{"log-level":"debug","api-admin-enabled":false},"node2":{...},...}'
-```
-
 Configurations:
 
-You can use Dijets-up with many different configurations and custom parameters. Network snapshots, ability to pair-up with other bash script and run a continuous process and simulating various test environments are just some of many features included in the latest release.
+You can use Dijets-up with many different configurations and custom parameters. Network snapshots, ability to pair-up with other bash scripts and run a continuous process with various simulated test environments are just some of its many features.
